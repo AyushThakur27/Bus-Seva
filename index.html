@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Bus Ticket Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#book">Book a Ticket</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Your Journey Starts Here</h2>
+        <p>Book tickets easily and travel comfortably with our trusted bus services.</p>
+        <img src="bus1.jpeg" alt="Bus Image" class="responsive">
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide top-notch bus services that ensure safety, comfort, and punctuality for all your travel needs. Our mission is to make your journey hassle-free and enjoyable.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Online Ticket Booking</li>
+            <li>Luxurious Buses with Wi-Fi</li>
+            <li>On-time Departures</li>
+            <li>24/7 Customer Support</li>
+        </ul>
+    </section>
+
+    <section id="book">
+        <h2>Book a Ticket</h2>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="Enter starting location" required>
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="Enter destination" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us!</p>
+        <ul>
+            <li>Email: support@bustickets.com</li>
+            <li>Phone: +1-234-567-890</li>
+            <li>Address: 123 Travel Lane, Journey City</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024-2025 Bus Ticket Booking. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAIBA3o56PnvrS6EvHB37-WWAqmDbO1Mio",
+          authDomain: "bus-seva-7b6e5.firebaseapp.com",
+          projectId: "bus-seva-7b6e5",
+          storageBucket: "bus-seva-7b6e5.firebasestorage.app",
+          messagingSenderId: "566018346788",
+          appId: "1:566018346788:web:596f6fffc287dc04a8edb1",
+          measurementId: "G-QQZH6BQPYS"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
